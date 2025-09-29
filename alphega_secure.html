@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Alphega Pharmacie - Sécurisé</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #008751;
+    }
+    h2 {
+      color: #005f3f;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 5px;
+    }
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    ul li {
+      margin: 5px 0;
+    }
+    .chiffres {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .chiffres div {
+      flex: 1;
+      margin: 10px;
+      padding: 15px;
+      background: #e9f7ef;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function login() {
+      var user = prompt("Nom d'utilisateur :");
+      var pass = prompt("Mot de passe :");
+      if (user === "user" && pass === "admin") {
+        alert("Accès autorisé !");
+      } else {
+        document.body.innerHTML = "<h2 style='color:red;text-align:center;'>⛔ Accès refusé</h2>";
+      }
+    }
+    window.onload = login;
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Alphega Pharmacie</h1>
+  </header>
+
+  <div class="section">
+    <h2>Coordonnées</h2>
+    <ul>
+      <li><strong>Adresse :</strong> 222 rue des Caboeufs, 92262 Gennevilliers</li>
+      <li><strong>Téléphone :</strong> 01 40 85 03 00</li>
+      <li><strong>Email :</strong> alphega@alliance-healthcare.fr</li>
+      <li><strong>Site web :</strong> <a href="http://www.alphega-pharmacie.fr" target="_blank">www.alphega-pharmacie.fr</a></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Dirigeants</h2>
+    <ul>
+      <li>Lilian ELM – Président du Réseau</li>
+      <li>Sophie REY – Direction Générale Comptes Laboratoires</li>
+      <li>Pascal TRAUTMANN – Directeur Développement</li>
+      <li>Christophe CARROT – Directeur Développement Direction</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Structure & Organisation</h2>
+    <ul>
+      <li>791 adhérents</li>
+      <li>Cotisation annuelle : 6 000 – 7 800 €</li>
+      <li>20 consultants points de vente + 5 responsables régionaux</li>
+      <li>Alliance Healthcare France (filiale de Walgreens Boots Alliance)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Offre & Services</h2>
+    <ul>
+      <li>Enseigne : visibilité intérieure & extérieure</li>
+      <li>Marques propres : Almus & Alvita</li>
+      <li>Agencement & merchandising : signalétique, parcours client</li>
+      <li>Communication grand public : TV, presse, réseaux sociaux</li>
+      <li>Services digitaux : scan ordonnance, téléconsultation, prise de RDV, appli mobile</li>
+      <li>Formations certifiées ISO 9001</li>
+      <li>Outils : Web to print, visites mystères, booster d’achats</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Chiffres clés</h2>
+    <div class="chiffres">
+      <div>410 pharmacies sous enseigne</div>
+      <div>+15% CA en 2022</div>
+      <div>Résultat net : 24% du CA</div>
+      <div>Diamant : 25% | Platinium : 42% | Access : 33%</div>
+    </div>
+  </div>
+</body>
+</html>
